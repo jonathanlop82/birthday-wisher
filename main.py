@@ -83,6 +83,7 @@ def send_email():
                            msg=f"Subject:Happy Birthday!!!\n\n{letter}")
 
 
+#### Guess if you can add a data
 add_birthday = input("Can you add new birthday day (yes/no)?: ")
 
 if add_birthday == 'yes':
