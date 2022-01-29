@@ -65,7 +65,6 @@ def select_a_letter():
     with open(new_letter, "w") as file:
         file.write(letter)
 
-
 # 4. Send the letter generated in step 3 to that person's email address.
 
 def send_email():
