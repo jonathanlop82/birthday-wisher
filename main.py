@@ -6,6 +6,7 @@ from csv import writer
 import random
 import shutil
 import smtplib
+import credentials
 
 name_birthday = ''
 email_birthday = ''
@@ -70,8 +71,8 @@ def select_a_letter():
 def send_email():
     global name_birthday, email_birthday, new_letter
 
-    my_email = "jtitech.pty@gmail.com"
-    password = "J2n1th1n82!"
+    my_email = credentials.my_email
+    password = credentials.password
 
     with open(new_letter) as file:
         letter = file.read()
